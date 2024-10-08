@@ -1,0 +1,90 @@
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: hsl(313, 47%, 61%);
+    padding: 10px;
+    text-align: center;
+    z-index: 1000; /* Ensuring header stays on top */
+}
+
+/* Main content and layout */
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 80px; /* Add margin to avoid being covered by fixed header */
+    padding: 0 20px;
+}
+
+
+article {
+    width: 60%;
+    background-color: #cf99c3;
+    padding: 15px;
+    margin: 20px auto;
+    z-index: 1; /* Main content should appear below the header */
+}
+
+/* Sidebar */
+aside {
+    width: 30%;
+    background-color: #cf99c3;
+    padding: 15px;
+    margin: 20px auto;
+    z-index: 2; /* Sidebar should appear above main content */
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: hsl(313, 47%, 61%);
+    text-align: center;
+    padding: 10px;
+    z-index: 100; /* Footer is lower than header but above main content */
+}
+
+/* Sticky Navigation Bar */
+nav {
+    position: sticky;
+    top: 50px; /* It will stick below the header */
+    background-color: hsl(313, 47%, 61%);
+    padding: 10px;
+    z-index: 500; /* Sticky nav sits between header and content */
+}
+
+/* Optional: Styling for the navigation bar */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+    padding: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
