@@ -1,5 +1,5 @@
 
-/* General Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -22,10 +22,10 @@ header {
     background-color: hsl(313, 47%, 61%);
     padding: 10px;
     text-align: center;
-    z-index: 1000; /* Ensuring header stays on top */
+    z-index: 1000; 
 }
 
-/* Main content and layout */
+
 main {
     display: flex;
     flex-direction: row;
@@ -43,16 +43,16 @@ article {
     z-index: 1; /* Main content should appear below the header */
 }
 
-/* Sidebar */
+
 aside {
     width: 30%;
     background-color: #cf99c3;
     padding: 15px;
     margin: 20px auto;
-    z-index: 2; /* Sidebar should appear above main content */
+    z-index: 2; 
 }
 
-/* Footer */
+
 footer {
     position: fixed;
     bottom: 0;
@@ -60,19 +60,18 @@ footer {
     background-color: hsl(313, 47%, 61%);
     text-align: center;
     padding: 10px;
-    z-index: 100; /* Footer is lower than header but above main content */
-}
+    z-index: 100; 
 
-/* Sticky Navigation Bar */
+
 nav {
     position: sticky;
-    top: 50px; /* It will stick below the header */
+    top: 50px; 
     background-color: hsl(313, 47%, 61%);
     padding: 10px;
-    z-index: 500; /* Sticky nav sits between header and content */
+    z-index: 500; 
 }
 
-/* Optional: Styling for the navigation bar */
+
 nav ul {
     list-style-type: none;
     display: flex;
